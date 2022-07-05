@@ -38,7 +38,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.all(10),
+              padding: EdgeInsets.all(50),
               child: ElevatedButton(
                 onPressed: onPressed,
                 child: Icon(
