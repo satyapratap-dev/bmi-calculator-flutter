@@ -1,5 +1,6 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -7,6 +8,10 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  void onPressed() {
+    print("Pressed button");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +37,8 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-            child: SizedBox.square(
+            child: ElevatedButton(
+              onPressed: onPressed,
               child: Icon(
                 Icons.ac_unit,
                 size: 64,
