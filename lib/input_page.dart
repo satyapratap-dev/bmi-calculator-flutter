@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -17,10 +18,16 @@ class _InputPageState extends State<InputPage> {
       //   child: Text('Body Text'),
       // ),
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           Text("FlutLab is on your service!"),
           Icon(Icons.mood),
+          InkWell(
+            child: Center(
+              child: Icon(
+                Icons.phone,
+              ),
+            ),
+          ),
         ],
       ),
     );
