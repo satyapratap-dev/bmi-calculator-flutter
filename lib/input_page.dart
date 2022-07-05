@@ -31,6 +31,7 @@ class _InputPageState extends State<InputPage> {
               size: 64,
             ),
           ),
+          SizedBox.square(),
         ],
       ),
     );
