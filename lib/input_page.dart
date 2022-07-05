@@ -20,7 +20,6 @@ class _InputPageState extends State<InputPage> {
       body: Column(
         children: <Widget>[
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Container(
                 margin: EdgeInsets.all(15.0),
