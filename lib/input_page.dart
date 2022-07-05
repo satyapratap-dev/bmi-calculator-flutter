@@ -13,8 +13,15 @@ class _InputPageState extends State<InputPage> {
         title: Text('BMI CALCULATOR'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text('Body Text'),
+      // body: Center(
+      //   child: Text('Body Text'),
+      // ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Text("FlutLab is on your service!"),
+          Icon(Icons.mood),
+        ],
       ),
     );
   }
