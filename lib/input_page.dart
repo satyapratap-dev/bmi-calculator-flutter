@@ -19,7 +19,6 @@ class _InputPageState extends State<InputPage> {
         centerTitle: true,
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Expanded(
             child: Row(
@@ -53,7 +52,6 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Expanded(
                   child: Container(
@@ -72,7 +70,6 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Expanded(
                   child: Container(
