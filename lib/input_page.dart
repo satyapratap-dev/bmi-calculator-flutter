@@ -37,14 +37,10 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-            child: Row(
-              children: <Widget>[
-                Expanded(
-                  child: ReusableCard(
-                    colour: Color(0xFF1e2231),
-                  ),
-                ),
-              ],
+            child: Expanded(
+              child: ReusableCard(
+                colour: Color(0xFF1e2231),
+              ),
             ),
           ),
           Expanded(
