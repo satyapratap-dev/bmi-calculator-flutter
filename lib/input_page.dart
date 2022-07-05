@@ -20,10 +20,33 @@ class _InputPageState extends State<InputPage> {
       ),
       body: Column(
         children: <Widget>[
+          // Expanded(
+          //   child: Row(
+          //     children: <Widget>[
+          //       Container(
+          //         margin: EdgeInsets.all(15.0),
+          //         decoration: BoxDecoration(
+          //           borderRadius: BorderRadius.circular(10.0),
+          //           // color: const Color(0xF1D1E33),
+          //           color: Colors.red,
+          //         ),
+          //       ),
+          //       Container(
+          //         margin: EdgeInsets.all(15.0),
+          //         decoration: BoxDecoration(
+          //           borderRadius: BorderRadius.circular(10.0),
+          //           // color: const Color(0xF1D1E33),
+          //           color: Colors.white,
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
           Expanded(
             child: Row(
               children: <Widget>[
                 Container(
+                  height: 15.0,
                   margin: EdgeInsets.all(15.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
@@ -31,53 +54,31 @@ class _InputPageState extends State<InputPage> {
                     color: Colors.red,
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    // color: const Color(0xF1D1E33),
-                    color: Colors.white,
-                  ),
-                ),
               ],
             ),
           ),
-          Expanded(
-            child: Row(
-              children: <Widget>[
-                Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    // color: const Color(0xF1D1E33),
-                    color: Colors.red,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Expanded(
-            child: Row(
-              children: <Widget>[
-                Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    // color: const Color(0xF1D1E33),
-                    color: Colors.red,
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    // color: const Color(0xF1D1E33),
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          // Expanded(
+          //   child: Row(
+          //     children: <Widget>[
+          //       Container(
+          //         margin: EdgeInsets.all(15.0),
+          //         decoration: BoxDecoration(
+          //           borderRadius: BorderRadius.circular(10.0),
+          //           // color: const Color(0xF1D1E33),
+          //           color: Colors.red,
+          //         ),
+          //       ),
+          //       Container(
+          //         margin: EdgeInsets.all(15.0),
+          //         decoration: BoxDecoration(
+          //           borderRadius: BorderRadius.circular(10.0),
+          //           // color: const Color(0xF1D1E33),
+          //           color: Colors.white,
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );
