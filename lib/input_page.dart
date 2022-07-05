@@ -45,6 +45,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
                   height: 200.0,
