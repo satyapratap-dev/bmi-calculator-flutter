@@ -31,12 +31,6 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-            child: Icon(
-              Icons.ac_unit,
-              size: 64,
-            ),
-          ),
-          Expanded(
             child: Padding(
               padding: EdgeInsets.all(50),
               child: ElevatedButton(
