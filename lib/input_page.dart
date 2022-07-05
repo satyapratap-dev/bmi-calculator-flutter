@@ -55,7 +55,7 @@ class _InputPageState extends State<InputPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
                       // color: const Color(0xF1D1E33),
-                      color: Colors.red,
+                      color: Color(0xFF1DE33),
                     ),
                   ),
                 ),
