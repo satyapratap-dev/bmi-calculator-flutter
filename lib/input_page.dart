@@ -17,18 +17,19 @@ class _InputPageState extends State<InputPage> {
       // body: Center(
       //   child: Text('Body Text'),
       // ),
-      body: Row(
-        children: <Widget>[
-          Text("FlutLab is on your service!"),
-          Icon(Icons.mood),
-          InkWell(
-            child: Center(
-              child: Icon(
-                Icons.phone,
-              ),
+      body: Expanded(
+        child: Row(
+          children: <Widget>[
+            Icon(
+              Icons.ac_unit,
+              size: 64,
             ),
-          ),
-        ],
+            Icon(
+              Icons.ac_unit,
+              size: 64,
+            ),
+          ],
+        ),
       ),
     );
   }
