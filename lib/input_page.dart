@@ -25,8 +25,14 @@ class _InputPageState extends State<InputPage> {
               size: 64,
             ),
           ),
-          SizedBox.square(
-            child: Expanded(
+          Expanded(
+            child: Icon(
+              Icons.ac_unit,
+              size: 64,
+            ),
+          ),
+          Expanded(
+            child: SizedBox.square(
               child: Icon(
                 Icons.ac_unit,
                 size: 64,
