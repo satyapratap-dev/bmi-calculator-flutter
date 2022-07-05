@@ -17,19 +17,21 @@ class _InputPageState extends State<InputPage> {
       // body: Center(
       //   child: Text('Body Text'),
       // ),
-      body: Expanded(
-        child: Row(
-          children: <Widget>[
-            Icon(
+      body: Row(
+        children: <Widget>[
+          Expanded(
+            child: Icon(
               Icons.ac_unit,
               size: 64,
             ),
-            Icon(
+          ),
+          Expanded(
+            child: Icon(
               Icons.ac_unit,
               size: 64,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
