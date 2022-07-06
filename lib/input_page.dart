@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 const bottonButtonHeight = 80.0;
 const cardColour = Color(0xFF1e2231);
 const bottomButtonColour = Color(0xFFEB1555);
+const iconContentText = Color(0xFF8D8E98);
 
 class InputPage extends StatefulWidget {
   @override
@@ -29,30 +30,19 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     colour: cardColour,
-                    childWidget: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Icon(
-                          Icons.male,
-                          size: 80.0,
-                        ),
-                        SizedBox(
-                          height: 15.0,
-                        ),
-                        Text(
-                          "MALE",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Color(0xFF8D8E98),
-                          ),
-                        ),
-                      ],
+                    childWidget: IconContentWidget(
+                      iconText: "MALE",
+                      iconData: Icons.male,
                     ),
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
                     colour: cardColour,
+                    childWidget: IconContentWidget(
+                      iconText: "FEMALE",
+                      iconData: Icons.female,
+                    ),
                   ),
                 ),
               ],
@@ -107,6 +97,39 @@ class ReusableCard extends StatelessWidget {
         color: colour,
       ),
       child: childWidget,
+    );
+  }
+}
+
+class IconContentWidget extends StatelessWidget {
+  final String? iconText;
+  final IconData? iconData;
+
+  IconContentWidget({
+    @required this.iconText,
+    this.iconData,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Icon(
+          iconData,
+          size: 80.0,
+        ),
+        SizedBox(
+          height: 15.0,
+        ),
+        Text(
+          iconText ?? "",
+          style: TextStyle(
+            fontSize: 18.0,
+            color: iconContentText,
+          ),
+        ),
+      ],
     );
   }
 }
