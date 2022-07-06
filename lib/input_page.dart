@@ -60,17 +60,7 @@ class _InputPageState extends State<InputPage> {
             margin: EdgeInsets.only(
               top: 10.0,
             ),
-            child: Expanded(
-              child: ElevatedButton(
-                onPressed: () => {},
-                child: Text(
-                  "Submit",
-                  style: TextStyle(
-                    fontSize: 20.0,
-                  ),
-                ),
-              ),
-            ),
+            color: Color(0xFFEB1555),
           ),
         ],
       ),
