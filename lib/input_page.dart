@@ -16,6 +16,7 @@ class _InputPageState extends State<InputPage> {
 
   @override
   Widget build(BuildContext context) {
+    var _value;
     return Scaffold(
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
@@ -68,6 +69,16 @@ class _InputPageState extends State<InputPage> {
             width: double.infinity,
             height: bottonButtonHeight,
           ),
+          Slider(
+            min: 0.0,
+            max: 100.0,
+            value: _value,
+            onChanged: (value) {
+              setState(() {
+                _value = value;
+              });
+            },
+          )
         ],
       ),
     );
