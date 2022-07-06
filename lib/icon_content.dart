@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const iconContentText = Color(0xFF8D8E98);
+
 class IconContentWidget extends StatelessWidget {
   final String? iconText;
   final IconData? iconData;

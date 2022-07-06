@@ -1,12 +1,10 @@
 import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
-
 import 'icon_content.dart';
 
 const bottonButtonHeight = 80.0;
 const cardColour = Color(0xFF1e2231);
 const bottomButtonColour = Color(0xFFEB1555);
-const iconContentText = Color(0xFF8D8E98);
 
 class InputPage extends StatefulWidget {
   @override
