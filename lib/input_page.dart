@@ -10,8 +10,6 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  var _value = 0.0;
-
   void onPressed() {
     print("Pressed button");
   }
@@ -69,24 +67,6 @@ class _InputPageState extends State<InputPage> {
             color: bottomButtonColour,
             width: double.infinity,
             height: bottonButtonHeight,
-          ),
-          Container(
-            margin: EdgeInsets.only(
-              top: 10.0,
-              bottom: 10.0,
-            ),
-            width: double.infinity,
-            height: 15.0,
-            child: Slider(
-              min: 0.0,
-              max: 100.0,
-              value: _value,
-              onChanged: (value) {
-                setState(() {
-                  _value = value;
-                });
-              },
-            ),
           ),
         ],
       ),
