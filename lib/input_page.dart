@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class InputPage extends StatefulWidget {
@@ -57,6 +56,22 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
+          Container(
+            margin: EdgeInsets.only(
+              top: 10.0,
+            ),
+            child: Expanded(
+              child: ElevatedButton(
+                onPressed: () => {},
+                child: Text(
+                  "Submit",
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -64,8 +79,8 @@ class _InputPageState extends State<InputPage> {
 }
 
 class ReusableCard extends StatelessWidget {
-  final Color colour;
   ReusableCard({@required this.colour});
+  final Color colour;
 
   @override
   Widget build(BuildContext context) {
