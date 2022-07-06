@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const bottonButtonHeight = 80.0;
+const cardColour = cardColour;
 
 class InputPage extends StatefulWidget {
   @override
@@ -26,12 +27,12 @@ class _InputPageState extends State<InputPage> {
               children: <Widget>[
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF1e2231),
+                    colour: cardColour,
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF1e2231),
+                    colour: cardColour,
                   ),
                 ),
               ],
@@ -39,7 +40,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: ReusableCard(
-              colour: Color(0xFF1e2231),
+              colour: cardColour,
             ),
           ),
           Expanded(
@@ -47,12 +48,12 @@ class _InputPageState extends State<InputPage> {
               children: <Widget>[
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF1e2231),
+                    colour: cardColour,
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF1e2231),
+                    colour: cardColour,
                   ),
                 ),
               ],
