@@ -69,16 +69,20 @@ class _InputPageState extends State<InputPage> {
             width: double.infinity,
             height: bottonButtonHeight,
           ),
-          Slider(
-            min: 0.0,
-            max: 100.0,
-            value: _value,
-            onChanged: (value) {
-              setState(() {
-                _value = value;
-              });
-            },
-          )
+          Container(
+            width: double.infinity,
+            height: 15.0,
+            child: Slider(
+              min: 0.0,
+              max: 100.0,
+              value: _value,
+              onChanged: (value) {
+                setState(() {
+                  _value = value;
+                });
+              },
+            ),
+          ),
         ],
       ),
     );
