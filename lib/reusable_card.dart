@@ -9,7 +9,9 @@ class ReusableCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       splashColor: Colors.pinkAccent,
-      onTap: () {},
+      onTap: () {
+        print("Tapped on inkwell");
+      },
       child: Container(
         margin: EdgeInsets.all(15.0),
         decoration: BoxDecoration(
