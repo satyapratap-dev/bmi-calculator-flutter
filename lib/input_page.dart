@@ -16,7 +16,7 @@ class _InputPageState extends State<InputPage> {
 
   @override
   Widget build(BuildContext context) {
-    var _value;
+    var _value = 0;
     return Scaffold(
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
