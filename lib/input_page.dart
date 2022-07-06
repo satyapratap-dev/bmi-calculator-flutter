@@ -29,6 +29,25 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     colour: cardColour,
+                    childWidget: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          Icons.mood,
+                          size: 15.0,
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Text(
+                          "MALE",
+                          style: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
@@ -76,7 +95,8 @@ class _InputPageState extends State<InputPage> {
 
 class ReusableCard extends StatelessWidget {
   final Color? colour;
-  ReusableCard({@required this.colour});
+  final Widget? childWidget;
+  ReusableCard({@required this.colour, this.childWidget});
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +106,7 @@ class ReusableCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10.0),
         color: colour,
       ),
+      child: childWidget,
     );
   }
 }
