@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const bottonButtonHeight = 80.0;
-const cardColour = cardColour;
+const cardColour = Color(0xFF1e2231);
 
 class InputPage extends StatefulWidget {
   @override
