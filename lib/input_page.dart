@@ -10,13 +10,14 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  var _value = 0.0;
+
   void onPressed() {
     print("Pressed button");
   }
 
   @override
   Widget build(BuildContext context) {
-    var _value = 0.0;
     return Scaffold(
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
@@ -70,6 +71,10 @@ class _InputPageState extends State<InputPage> {
             height: bottonButtonHeight,
           ),
           Container(
+            margin: EdgeInsets.only(
+              top: 10.0,
+              bottom: 10.0,
+            ),
             width: double.infinity,
             height: 15.0,
             child: Slider(
