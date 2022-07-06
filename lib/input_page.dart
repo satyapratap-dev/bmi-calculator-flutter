@@ -1,4 +1,7 @@
+import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
+
+import 'icon_content.dart';
 
 const bottonButtonHeight = 80.0;
 const cardColour = Color(0xFF1e2231);
@@ -79,57 +82,6 @@ class _InputPageState extends State<InputPage> {
           ),
         ],
       ),
-    );
-  }
-}
-
-class ReusableCard extends StatelessWidget {
-  final Color? colour;
-  final Widget? childWidget;
-  ReusableCard({@required this.colour, this.childWidget});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(15.0),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        color: colour,
-      ),
-      child: childWidget,
-    );
-  }
-}
-
-class IconContentWidget extends StatelessWidget {
-  final String? iconText;
-  final IconData? iconData;
-
-  IconContentWidget({
-    @required this.iconText,
-    this.iconData,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        Icon(
-          iconData,
-          size: 80.0,
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        Text(
-          iconText ?? "",
-          style: TextStyle(
-            fontSize: 18.0,
-            color: iconContentText,
-          ),
-        ),
-      ],
     );
   }
 }
