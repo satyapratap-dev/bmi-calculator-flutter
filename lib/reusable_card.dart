@@ -7,19 +7,13 @@ class ReusableCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      splashColor: Colors.pinkAccent,
-      onTap: () {
-        print("Tapped on inkwell");
-      },
-      child: Container(
-        margin: EdgeInsets.all(15.0),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0),
-          color: colour,
-        ),
-        child: childWidget,
+    return Container(
+      margin: EdgeInsets.all(15.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
+        color: colour,
       ),
+      child: childWidget,
     );
   }
 }
