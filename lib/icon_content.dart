@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-const iconContentText = Color(0xFF8D8E98);
+import 'constants.dart';
 
 class IconContentWidget extends StatelessWidget {
   final String? iconText;
@@ -25,10 +24,7 @@ class IconContentWidget extends StatelessWidget {
         ),
         Text(
           iconText ?? "",
-          style: TextStyle(
-            fontSize: 18.0,
-            color: iconContentText,
-          ),
+          style: cardTextStyle,
         ),
       ],
     );

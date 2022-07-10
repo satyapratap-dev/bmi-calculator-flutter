@@ -1,11 +1,9 @@
+import 'dart:ui';
+
 import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
+import 'constants.dart';
 import 'icon_content.dart';
-
-const bottonButtonHeight = 80.0;
-const activeCardColour = Color(0xFF1e2231);
-const inActiveCardColour = Color(0xFF111328);
-const bottomButtonColour = Color(0xFFEB1555);
 
 enum Gender {
   Male,
@@ -65,6 +63,22 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: ReusableCard(
               colour: activeCardColour,
+              childWidget: Column(
+                children: <Widget>[
+                  Text(
+                    "HEIGHT",
+                    style: cardTextStyle,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        "100",
+                        style: sliderTextStyle,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
           Expanded(
