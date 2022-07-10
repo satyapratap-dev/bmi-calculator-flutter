@@ -125,14 +125,18 @@ class _InputPageState extends State<InputPage> {
                           weight.toString(),
                           style: sliderNumberTextStyle,
                         ),
-                        RoundCircleButton(
-                          icon: Icons.add,
-                        ),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        RoundCircleButton(
-                          icon: Icons.remove,
+                        Row(
+                          children: [
+                            RoundCircleButton(
+                              icon: Icons.add,
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            RoundCircleButton(
+                              icon: Icons.remove,
+                            ),
+                          ],
                         ),
                       ],
                     ),
