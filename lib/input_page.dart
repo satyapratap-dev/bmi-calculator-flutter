@@ -64,6 +64,7 @@ class _InputPageState extends State<InputPage> {
             child: ReusableCard(
               colour: activeCardColour,
               childWidget: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
                     "HEIGHT",
@@ -71,11 +72,17 @@ class _InputPageState extends State<InputPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    textBaseline: TextBaseline.alphabetic,
                     children: <Widget>[
                       Text(
                         "100",
-                        style: sliderTextStyle,
+                        style: sliderNumberTextStyle,
                       ),
+                      Text(
+                        "cm",
+                        style: cardTextStyle,
+                      )
                     ],
                   ),
                 ],

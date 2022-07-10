@@ -9,7 +9,7 @@ const cardTextStyle = TextStyle(
   fontSize: 18.0,
   color: iconContentText,
 );
-const sliderTextStyle = TextStyle(
+const sliderNumberTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   fontSize: 50.0,
 );
