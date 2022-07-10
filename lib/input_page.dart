@@ -1,6 +1,5 @@
 import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'constants.dart';
 import 'icon_content.dart';
 
@@ -146,7 +145,6 @@ class _InputPageState extends State<InputPage> {
                                 setState(() {
                                   weight++;
                                 });
-                                print("+ pressed " + weight.toString());
                               },
                             ),
                           ],
@@ -189,7 +187,7 @@ class RoundCircleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      onPressed: () => {},
+      onPressed: onPress,
       shape: CircleBorder(),
       constraints: BoxConstraints.tightFor(
         width: 56.0,
