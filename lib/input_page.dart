@@ -70,10 +70,10 @@ class _InputPageState extends State<InputPage> {
                     style: cardTextStyle,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
                         "100",
-                        textAlign: TextAlign.center,
                         style: sliderTextStyle,
                       ),
                     ],
