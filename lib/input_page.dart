@@ -17,6 +17,7 @@ class _InputPageState extends State<InputPage> {
   Gender? selectedGender;
   int height = 120;
   int weight = 60;
+  int age = 20;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -156,6 +157,43 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     colour: activeCardColour,
+                    childWidget: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "AGE",
+                          style: cardTextStyle,
+                        ),
+                        Text(
+                          weight.toString(),
+                          style: sliderNumberTextStyle,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            RoundCircleButton(
+                              icon: Icons.remove,
+                              onPress: () {
+                                setState(() {
+                                  age--;
+                                });
+                              },
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            RoundCircleButton(
+                              icon: Icons.add,
+                              onPress: () {
+                                setState(() {
+                                  age++;
+                                });
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -181,7 +219,7 @@ class RoundCircleButton extends StatelessWidget {
 
   RoundCircleButton({
     @required this.icon,
-    this.onPress,
+    @required this.onPress,
   });
 
   @override
