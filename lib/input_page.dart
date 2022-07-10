@@ -123,7 +123,7 @@ class _InputPageState extends State<InputPage> {
                           style: cardTextStyle,
                         ),
                         Text(
-                          weight.toString(),
+                          age.toString(),
                           style: sliderNumberTextStyle,
                         ),
                         Row(
