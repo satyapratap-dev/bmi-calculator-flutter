@@ -126,6 +126,7 @@ class _InputPageState extends State<InputPage> {
                           style: sliderNumberTextStyle,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             RoundCircleButton(
                               icon: Icons.add,
