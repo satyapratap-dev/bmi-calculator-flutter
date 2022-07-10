@@ -115,6 +115,7 @@ class _InputPageState extends State<InputPage> {
                   child: ReusableCard(
                     colour: activeCardColour,
                     childWidget: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "WEIGHT",
