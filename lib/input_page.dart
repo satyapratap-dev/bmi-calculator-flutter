@@ -73,6 +73,7 @@ class _InputPageState extends State<InputPage> {
                     children: <Widget>[
                       Text(
                         "100",
+                        textAlign: TextAlign.center,
                         style: sliderTextStyle,
                       ),
                     ],
