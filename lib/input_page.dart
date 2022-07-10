@@ -146,7 +146,7 @@ class _InputPageState extends State<InputPage> {
                                 setState(() {
                                   weight++;
                                 });
-                                print("+ pressed " + weight);
+                                print("+ pressed " + weight.toString());
                               },
                             ),
                           ],
