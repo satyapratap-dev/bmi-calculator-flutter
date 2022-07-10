@@ -129,13 +129,23 @@ class _InputPageState extends State<InputPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             RoundCircleButton(
-                              icon: Icons.add,
+                              icon: Icons.remove,
+                              onPress: () {
+                                setState(() {
+                                  weight--;
+                                });
+                              },
                             ),
                             SizedBox(
                               width: 10.0,
                             ),
                             RoundCircleButton(
-                              icon: Icons.remove,
+                              icon: Icons.add,
+                              onPress: () {
+                                setState(() {
+                                  weight++;
+                                });
+                              },
                             ),
                           ],
                         ),
