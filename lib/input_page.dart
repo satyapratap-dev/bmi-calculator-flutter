@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:bmi_calculator/reusable_card.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
@@ -18,6 +16,7 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   Gender? selectedGender;
   int height = 120;
+  int weight = 60;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -115,6 +114,21 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     colour: activeCardColour,
+                    childWidget: Column(
+                      children: [
+                        Text(
+                          "WEIGHT",
+                          style: cardTextStyle,
+                        ),
+                        Text(
+                          weight.toString(),
+                          style: sliderNumberTextStyle,
+                        ),
+                        RoundCircleButton(
+                          icon: Icons.add,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
@@ -135,6 +149,30 @@ class _InputPageState extends State<InputPage> {
           ),
         ],
       ),
+    );
+  }
+}
+
+class RoundCircleButton extends StatelessWidget {
+  final IconData? icon;
+  final VoidCallback? onPress;
+
+  RoundCircleButton({
+    @required this.icon,
+    this.onPress,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return RawMaterialButton(
+      onPressed: () => {},
+      shape: CircleBorder(),
+      constraints: BoxConstraints.tightFor(
+        width: 56.0,
+        height: 56.0,
+      ),
+      fillColor: Color(0xFF4C4F5E),
+      child: Icon(icon),
     );
   }
 }
