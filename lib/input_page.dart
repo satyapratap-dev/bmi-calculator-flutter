@@ -173,29 +173,31 @@ class _InputPageState extends State<InputPage> {
                           age.toString(),
                           style: sliderNumberTextStyle,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            RoundCircleButton(
-                              icon: Icons.remove,
-                              onPress: () {
-                                setState(() {
-                                  age--;
-                                });
-                              },
-                            ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            RoundCircleButton(
-                              icon: Icons.add,
-                              onPress: () {
-                                setState(() {
-                                  age++;
-                                });
-                              },
-                            ),
-                          ],
+                        Expanded(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              RoundCircleButton(
+                                icon: Icons.remove,
+                                onPress: () {
+                                  setState(() {
+                                    age--;
+                                  });
+                                },
+                              ),
+                              SizedBox(
+                                width: 10.0,
+                              ),
+                              RoundCircleButton(
+                                icon: Icons.add,
+                                onPress: () {
+                                  setState(() {
+                                    age++;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
