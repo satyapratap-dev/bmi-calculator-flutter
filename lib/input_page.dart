@@ -1,4 +1,5 @@
 import 'package:bmi_calculator/reusable_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'icon_content.dart';
@@ -128,29 +129,31 @@ class _InputPageState extends State<InputPage> {
                           weight.toString(),
                           style: sliderNumberTextStyle,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            RoundCircleButton(
-                              icon: Icons.remove,
-                              onPress: () {
-                                setState(() {
-                                  weight--;
-                                });
-                              },
-                            ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            RoundCircleButton(
-                              icon: Icons.add,
-                              onPress: () {
-                                setState(() {
-                                  weight++;
-                                });
-                              },
-                            ),
-                          ],
+                        Expanded(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              RoundCircleButton(
+                                icon: Icons.remove,
+                                onPress: () {
+                                  setState(() {
+                                    weight--;
+                                  });
+                                },
+                              ),
+                              SizedBox(
+                                width: 10.0,
+                              ),
+                              RoundCircleButton(
+                                icon: Icons.add,
+                                onPress: () {
+                                  setState(() {
+                                    weight++;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
